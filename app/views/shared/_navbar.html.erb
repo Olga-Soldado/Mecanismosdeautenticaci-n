@@ -1,0 +1,29 @@
+
+    <header>
+        <div class="logo">
+            <% if user_signed_in? %>
+                Hello <%= current_user.username %> !!
+            <% else %>
+                Register or Connect
+            <% end %>
+        </div>
+        <div class="hamburguesa">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><%= link_to 'Home', root_path, class: 'a'%></li>
+                <li></li>
+                <% if user_signed_in? %>
+                <li><%= button_to 'Sign out', destroy_user_session_path ,  method: :delete,class: 'acrive' %></li>
+                <li><%= link_to 'Notices', publications_path, class: 'a' %></li>
+                <% else %>
+                <li><%= link_to 'Log In', new_user_session_path, class: 'a'%></li>
+                <li><%= link_to 'Sing Up', new_user_registration_path, class: 'a'%></li>
+                <%end%>
+ 
+            </ul>
+        </nav>
+    </header>
