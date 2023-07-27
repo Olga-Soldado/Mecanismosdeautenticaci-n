@@ -5,9 +5,9 @@
   <% @publications.each do |publication| %>
     <%= render publication %>
     <p>
-      <%= link_to "Show this publication", publication %>
+      <%= link_to "Show this publication", publication, class:'text' %>
     </p>
   <% end %>
 </div>
-
-<%= link_to "New publication", new_publication_path %>
+<br>
+<%= link_to "New publication", new_publication_path, class:'text' %>

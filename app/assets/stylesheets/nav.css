@@ -6,57 +6,72 @@
 body{
     font-family: 'Mochiy Pop One', sans-serif;
     overflow-x:hidden ;
+    background-color: white;
 
 }
-.fondo{
-    padding-left: 30%;
-    margin-top: 1%;
-}
+img{width: 350px;
+height: 200px;
+border-radius: 5px;}
 header{
     width: 100%;
     height: 80px;
-    background-color: white;
     display:flex;
     justify-content: space-between;
     padding: 0 100px;
     align-items: center;
-    box-shadow: 0 16px 8px -9px rgba(191,191,191);
+    box-shadow: 0 16px 8px -9px  #0b2447;;
+    border-radius: 10px;
+    
 }
 
 .logo{
     font-size: 28px;
     font-weight: 600;
-    color: #0b2447;
+    color:  #0b2447;
 }
-h2{    color: #0b2447;align-items: center;}
-
+h1,h2{color: #0b2447;;
+    align-items: center;
+    margin-top: 1%;}
 
 .hamburguesa{display: none;}
-
-.nav-bar ul{ 
-    display:flex;
+.centro{align-items: center;
+margin-left: 20%;}
+.nav-bar ul,ul li{ 
+    display:inline-flex;
     list-style: none;
-    position: sticky;}
+    
+    }
 
 .nav-bar ul li .a , .nav-bar ul li .acrive{
     text-decoration: none;
     display: block;
-    color: #576cbc;
+    color: #0b2447;;
     font-size: 20px;
     padding: 10px 25px;
     margin :0 5px;
     transition: .2s;
+    
     }
-.form{    color: white;
-    border :3px solid#fff;
+.form{margin-top: 1%;
+    margin-left: 25%;
+    color:#0b2447;;
     text-align: start;
     padding: 2%;
     font-size: 20px;
     font-weight: lighter;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(2px);
-    width: fit-content;
+    width:45%;
+    
     }
+.text{
+    margin-left: 25%;
+    color:  #0b2447;;
+    text-align: end;
+    padding: 2%;
+    font-size: 14px;
+    font-weight: lighter;
+    width:45%;
+}
+
     .nav-bar ul li .a::after{
         display: block;
         content: "";
@@ -65,7 +80,8 @@ h2{    color: #0b2447;align-items: center;}
         transition: transform  250ms ease-in-out;
     }
     .nav-bar ul li .a:hover::after{transform: scaleX(1);}
-    .nav-bar ul li .acrive{color:red !important}
+    .nav-bar ul li .acrive,.acrive{color:red !important ;
+                            font-weight: bold;}
 
 @media only screen and (max-width: 900px){
     .hamburguesa{

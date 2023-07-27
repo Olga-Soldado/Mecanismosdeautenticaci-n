@@ -1,3 +1,4 @@
+<div class="form">
 <%= form_with(model: publication) do |form| %>
   <% if publication.errors.any? %>
     <div style="color: red">
@@ -15,13 +16,14 @@
     <%= form.label :title, style: "display: block" %>
     <%= form.text_field :title %>
   </div>
-
+<br>
   <div>
     <%= form.label :description, style: "display: block" %>
     <%= form.text_area :description %>
   </div>
-
+<br>
   <div>
     <%= form.submit %>
   </div>
 <% end %>
+</div>
